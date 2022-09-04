@@ -2,12 +2,16 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+import houseSell from "../../Assets/Projects/housesell.PNG";
+import danapayClient from "../../Assets/Projects/danapay-1.png";
+import danapayAdmin from "../../Assets/Projects/danapay-2.png";
+import rapidWristband from "../../Assets/Projects/rapid-2.png";
+import mintGolf from "../../Assets/Projects/mintgolf.png";
+import foodDelivery from "../../Assets/Projects/foodDelivery.png";
+import treeDefi from "../../Assets/Projects/tree.PNG";
+import miroTalk from "../../Assets/Projects/mirotalk-header.gif";
+import marketplace from "../../Assets/Projects/img_20220803.png";
 
 function Projects() {
   return (
@@ -23,68 +27,94 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={houseSell}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="House Selling project"
+              description="E-commerce project for buying and selling house.
+              AngularJS, Angular CLI, Angular Material, Prime NG used.
+               Integrated Google Maps API"
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://housebuyersofamerica.com/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={danapayClient}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Danapay Client Financial Project"
+              description="Financial Project for sending Money using Crypto and several Bank accounts. Used React and Node.js and implemented Sumsub registration."
+              ghLink="https://github.com/Brilliantwebdev1125/Danapay-app-front"
+              demoLink="https://app.danapay.io"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={danapayAdmin}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Danapay Admin Project"
+              description="Danapay Admin project for managing users, transactions and so on. Used Vue.js and Laravel and implemented several Blockchain features using Solidiy."
+              // ghLink="https://github.com/Brilliantwebdev1125/Danapay-app-front"
+              demoLink="https://admin.danapay.io"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={rapidWristband}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Wristbands online shopping project"
+              description="RapidWristband online shopping project in United States. Used Laravel and Aemios for CMS. I made version 1.0 from scratch and upgraded to 2.0 with Ionic-React. I used Cypress and Laravel Dusk for Testing."
+              ghLink="https://github.com/Brilliantwebdev1125/RapidWristband1.0.git"
+              demoLink="https://rapidwristbands.com"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={mintGolf}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Golf NFT minting project"
+              description="NFT Mint Golf Project. Used Solidity, ERC20 Token, React for Front-End. Can connect wallet using Metamask and integrated using web3.js."
+              // ghLink="https://github.com/Brilliantwebdev1125/RapidWristband1.0.git"
+              demoLink="http://cryptogolf.io/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={foodDelivery}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Food Delivery App"
+              description="Food Delivery Project using MERN stack. Deployed using Heroku. Implemented Admin and Customer side. It is simple Online-shopping project."
+              ghLink="https://github.com/Brilliantwebdev1125/Food-Delivery-App"
+              demoLink="https://fast-food-delivery-app.herokuapp.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={treeDefi}
+              isBlog={false}
+              title="Tree Defi Project"
+              description="Users can buy Trees using Crypto and contribute in decreasing CO2. Developed Defi Contract, Front-End using React and integrated using web3.js. "
+              // ghLink="https://github.com/Brilliantwebdev1125/Food-Delivery-App"
+              demoLink="https://app.treedefi.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={miroTalk}
+              isBlog={false}
+              title="MiroTalk Video Chat App"
+              description="Best video chat app.Free WebRTC - P2P - Simple, Secure, Fast Real-Time Video Conferences Up to 4k and 60fps, compatible with all browsers and platforms."
+              ghLink="https://github.com/Brilliantwebdev1125/MiroTalk-Video-Chat-App"
+              demoLink="https://p2p.mirotalk.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={marketplace}
+              isBlog={false}
+              title="NFT Marketplace"
+              description="NFT marketplace with React, Node and Blockchain Technology. Developed from scratch."
+              // ghLink="https://github.com/Brilliantwebdev1125/MiroTalk-Video-Chat-App"
+              demoLink="https://crea2ors.io"
             />
           </Col>
         </Row>
